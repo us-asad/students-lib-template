@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
@@ -17,10 +18,10 @@ export default function Header() {
         </div>
       </header>
       <div className="flex justify-center gap-16 text-[25px]">
-        <span>Home</span>
-        <span>Students Project</span>
-        <span>Contact Us</span>
-        <span>News</span>
+        <Link href="/">Home</Link>
+        <Link href="/students">Students Project</Link>
+        <Link href="/books">Contact Us</Link>
+        <Link href="/students">News</Link>
       </div>
       <h1 className='text-center text-[50px] mt-10 pb-56'>You will achieve your goal with us</h1>
     </div>
